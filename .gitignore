@@ -1,0 +1,18 @@
+# 환경변수 / 시크릿 (절대 커밋 금지)
+.env
+
+# 로그인 실패 디버그 스크린샷
+login_failed.png
+login_device_confirm.png
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# 패키지 설치 캐시
+*.egg-info/
+dist/
+build/
