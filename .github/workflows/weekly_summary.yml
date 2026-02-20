@@ -52,9 +52,8 @@ jobs:
       # ── 5. Run MimiEcho ──────────────────────────────────────────────
       - name: Run MimiEcho
         env:
-          NAVER_ID: ${{ secrets.NAVER_ID }}
-          NAVER_PW: ${{ secrets.NAVER_PW }}
-          CAFE_CLUB_ID: ${{ secrets.CAFE_CLUB_ID }}
+          NAVER_COOKIES: ${{ secrets.NAVER_COOKIES }}
+          CAFE_URL_NAME: ${{ secrets.CAFE_URL_NAME }}
           CAFE_BOARD_ID: ${{ secrets.CAFE_BOARD_ID }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
