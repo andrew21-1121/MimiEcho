@@ -92,10 +92,9 @@ class DiscordNotifier:
         self._post_webhook(username="MimiEcho", content="", embeds=[embed])
 
     def send_no_posts_notice(self) -> None:
-        """Send a notice when no new posts are found (optional, informational)."""
+        """Send a notice when no new posts are found."""
         embed = {
-            "title": "ℹ️ 새로운 게시글 없음",
-            "description": "이번 주기에 새로운 게시글이 없습니다.",
+            "title": "회의록 없음!",
             "color": 0xAAAAAA,
             "footer": {"text": "MimiEcho"},
             "timestamp": datetime.now(timezone.utc).isoformat(),

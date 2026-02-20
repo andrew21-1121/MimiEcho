@@ -127,7 +127,8 @@ def main() -> None:
         )
 
         if not posts:
-            logger.info("No new posts found. Nothing to do.")
+            logger.info("No new posts found. Sending notice.")
+            notifier.send_no_posts_notice()
             return
 
         logger.info("Found %d new post(s) to process.", len(posts))
